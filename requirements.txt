@@ -1,0 +1,35 @@
+#Core Framework
+
+fastapi
+uvicorn[standard]
+python-multipart
+
+#Langchain and AI
+
+langchain
+langchain-community
+langchain-ollama
+langchain-google-genai
+langchain-qdrant
+
+qdrant-client
+
+#Document Parsing
+pypdf
+python-docx
+
+#Configuration & Validation
+pydantic
+pydantic-settings
+python-dotenv
+
+#Logging and Monitoring
+langsmith
+structlog
+
+
+#Http client
+
+httpx
+datasets
+ragas
