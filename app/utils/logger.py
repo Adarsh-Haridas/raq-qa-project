@@ -29,13 +29,13 @@ def setup_logging(level: str=None):
     logging.getLogger("qdrant_client").setLevel(logging.WARNING)
 
 
-    @lru_cache
-    def get_logger(name: str) -> logging.Logger:
-        return logging.getLogger(name)
-    
+@lru_cache
+def get_logger(name: str) -> logging.Logger:
+    return logging.getLogger(name)
 
-    class LoggerMixin:
 
-        @property
-        def logger(self):
-            return get_logger(self.__class__.__name__)
+class LoggerMixin:
+
+    @property
+    def logger(self):
+        return get_logger(self.__class__.__name__)
