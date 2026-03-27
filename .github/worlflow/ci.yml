@@ -6,12 +6,12 @@ name: CI/CD Pipeline
 
 on:
   push:
-    branches: [main, develop]
+    branches: [main2, develop]   #Change to main later
   pull_request:
-    branches: [main]
+    branches: [main2]
 
 env:
-  PYTHON_VERSION: "3.12"
+  PYTHON_VERSION: "3.13.2"
 
 jobs:
   # ============================================
