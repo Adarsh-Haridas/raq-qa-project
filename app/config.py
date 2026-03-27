@@ -11,7 +11,6 @@ class Settings(BaseSettings):
     )
 
     #Gemini Configuration
-    
     gemini_api_key: str
 
     #Qdrant Cloud Configuration
