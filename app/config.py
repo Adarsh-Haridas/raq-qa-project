@@ -10,8 +10,8 @@ class Settings(BaseSettings):
         extra="ignore"
     )
 
-    #OpenAi Configuration
-    openai_api_key: str
+    #Gemini Configuration
+    
     gemini_api_key: str
 
     #Qdrant Cloud Configuration
