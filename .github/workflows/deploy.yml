@@ -12,7 +12,7 @@ on:
 env:
   AWS_REGION: us-east-1
   ECR_REPOSITORY: rag-qa-system
-  APP_RUNNER_SERVICE: rag-qa-system
+  APP_RUNNER_SERVICE: rag-qa-app
 
 jobs:
   # ============================================
