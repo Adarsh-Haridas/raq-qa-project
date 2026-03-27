@@ -3,7 +3,7 @@
 # ==================================================
 
 # Build stage
-FROM python:3.12.2-slim AS builder
+FROM python:3.13.2-slim AS builder
 
 WORKDIR /app
 
@@ -25,7 +25,7 @@ RUN pip install --no-cache-dir --upgrade pip && \
 
 
 # Production stage
-FROM python:3.12-slim AS production
+FROM python:3.13.2-slim AS production
 
 WORKDIR /app
 
@@ -63,4 +63,4 @@ HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
     CMD python -c "import httpx; httpx.get('http://localhost:8000/health')" || exit 1
 
 # Run application
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["uvicorn", "app.main2:app", "--host", "0.0.0.0", "--port", "8000"]
