@@ -6,9 +6,9 @@ name: CI/CD Pipeline
 
 on:
   push:
-    branches: [main2, develop]   #Change to main later
+    branches: [main, develop]   #Change to main later
   pull_request:
-    branches: [main2]
+    branches: [main]
 
 env:
   PYTHON_VERSION: "3.13.2"
