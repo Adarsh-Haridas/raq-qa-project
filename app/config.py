@@ -10,6 +10,7 @@ class Settings(BaseSettings):
         extra="ignore"
     )
 
+
     #Gemini Configuration
     gemini_api_key: str
 
